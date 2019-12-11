@@ -75,56 +75,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r6c-yf-VhS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="16" y="64" width="343" height="515"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ed0-cD-tku">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="171.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-kC-d0S" userLabel="Fast Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="171.5"/>
                                                 <state key="normal" image="Fast"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiT-4J-2ok" userLabel="Slow Button">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="201"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="171.5"/>
                                                 <state key="normal" image="Slow"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="beJ-bf-fjc">
-                                        <rect key="frame" x="0.0" y="201" width="375" height="201"/>
+                                        <rect key="frame" x="0.0" y="171.5" width="343" height="172"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCD-x7-Sze" userLabel="High pitch">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="172"/>
                                                 <state key="normal" image="HighPitch"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3r-PE-u7g" userLabel="Low pitch">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="201"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="172"/>
                                                 <state key="normal" image="LowPitch"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sIl-Om-a82">
-                                        <rect key="frame" x="0.0" y="402" width="375" height="201"/>
+                                        <rect key="frame" x="0.0" y="343.5" width="343" height="171.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoS-Z5-HIV" userLabel="Echo">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="171.5"/>
                                                 <state key="normal" image="Echo"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOf-rq-TLT" userLabel="Reverb">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="201"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="171.5"/>
                                                 <state key="normal" image="Reverb"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hia-tJ-Mmd">
+                                <rect key="frame" x="155.5" y="587" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="9nx-tO-edd"/>
+                                    <constraint firstAttribute="width" constant="64" id="roz-SP-OHO"/>
+                                </constraints>
+                                <state key="normal" image="Stop"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99990183115005493" green="1" blue="0.99987989664077759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vUT-C7-Uok" firstAttribute="trailing" secondItem="r6c-yf-VhS" secondAttribute="trailing" id="Egr-ec-mKk"/>
+                            <constraint firstItem="vUT-C7-Uok" firstAttribute="trailing" secondItem="r6c-yf-VhS" secondAttribute="trailing" constant="16" id="Egr-ec-mKk"/>
+                            <constraint firstItem="Hia-tJ-Mmd" firstAttribute="centerX" secondItem="vUT-C7-Uok" secondAttribute="centerX" id="Qub-bm-Tnr"/>
                             <constraint firstItem="r6c-yf-VhS" firstAttribute="top" secondItem="vUT-C7-Uok" secondAttribute="top" id="XIs-Ba-XHa"/>
-                            <constraint firstItem="r6c-yf-VhS" firstAttribute="leading" secondItem="vUT-C7-Uok" secondAttribute="leading" id="YxY-Mb-9o2"/>
-                            <constraint firstItem="vUT-C7-Uok" firstAttribute="bottom" secondItem="r6c-yf-VhS" secondAttribute="bottom" id="vNM-zu-exF"/>
+                            <constraint firstItem="r6c-yf-VhS" firstAttribute="leading" secondItem="vUT-C7-Uok" secondAttribute="leading" constant="16" id="YxY-Mb-9o2"/>
+                            <constraint firstItem="Hia-tJ-Mmd" firstAttribute="top" secondItem="r6c-yf-VhS" secondAttribute="bottom" constant="8" id="eg5-Cx-6Ii" userLabel="Button.top = Stack View.bottom"/>
+                            <constraint firstItem="vUT-C7-Uok" firstAttribute="bottom" secondItem="Hia-tJ-Mmd" secondAttribute="bottom" constant="16" id="vNM-zu-exF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vUT-C7-Uok"/>
                     </view>

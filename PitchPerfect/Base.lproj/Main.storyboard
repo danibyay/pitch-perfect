@@ -33,7 +33,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrZ-Fd-FeF"/>
-                                    <segue destination="C93-5o-Kh5" kind="show" id="Fcv-jf-fyJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhd-he-3xc">
@@ -60,16 +59,17 @@
                         <outlet property="recordingButton" destination="Lhd-he-3xc" id="oCT-CX-6FD"/>
                         <outlet property="recordingLabel" destination="5e3-8O-JKl" id="aAD-Iu-iww"/>
                         <outlet property="stopRecordingButton" destination="8mL-WA-Mqn" id="jqB-MM-dEL"/>
+                        <segue destination="C93-5o-Kh5" kind="show" identifier="stopRecording" id="DKl-8P-ib5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1012" y="112"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="U3l-2X-10W">
             <objects>
-                <viewController id="C93-5o-Kh5" sceneMemberID="viewController">
+                <viewController id="C93-5o-Kh5" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bqf-MF-c1v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

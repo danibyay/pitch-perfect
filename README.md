@@ -10,6 +10,9 @@ Uses the AVAudioEngine and AVFoundation frameworks to implement the following vo
 * Reverb
 * Echo
 
+## Video demo
+Watch the video demo of the app [here](https://www.youtube.com/watch?v=43L6ZFqhq8w)
+
 ## Storyboard
 
 ![](ref_images/storyboard.png)
